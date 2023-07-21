@@ -28,7 +28,7 @@
 
 
 # Technology
-Datagrid is built using the following technologies:
+Tasks is built using the following technologies:
 
 :small_orange_diamond: ReactJS  
   
