@@ -1,0 +1,25 @@
+@import "Main.scss";
+
+.bgMap{
+    background-color: $brown;
+    padding: 42px 80px;
+    position: relative;
+    overflow-x: auto; 
+    scrollbar-color: red;
+}::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Yatay scrollbar rengi */
+::-webkit-scrollbar-horizontal {
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: transparent;
+}
+

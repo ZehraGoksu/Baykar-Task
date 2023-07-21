@@ -1,0 +1,36 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+$fontRoboto: "Roboto", sans-serif;
+
+//Colors
+$blueGray: rgba(15, 23, 42, 1);
+$bgFooterText: rgba(226, 232, 240, 1);
+$bgNav: rgba(255, 251, 236, 255);
+$brown: rgba(120, 53, 15, 1);
+$yellow: rgba(251, 191, 36, 1);
+$lightGreen: rgba(34, 197, 94, 1);
+$green: rgba(21, 128, 61, 1);
+$rose: rgba(225, 29, 72, 1);
+$lightYellow: rgba(253, 230, 138, 1);
+$bgYellow: rgba(254, 243, 199, 1);
+
+//Sizes
+$mobile: 393px;
+$sm: 576px;
+$md: 768px;
+$l:800px;
+$lg: 996px;
+$xl: 1200px;
+$xxl:1403px;
+$xxxl:1480px;
+
+* {
+  font-family: $fontRoboto;
+  font-style: normal;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

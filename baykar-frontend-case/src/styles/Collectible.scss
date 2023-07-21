@@ -1,0 +1,110 @@
+@import "Main.scss";
+
+.bgCollectible {
+  padding: 80px;
+  position: relative;
+  z-index: 2;
+
+  h1 {
+    color: $blueGray;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 110%;
+    margin-bottom: 32px;
+  }
+  p {
+    color: $blueGray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    padding-bottom: 32px;
+  }
+
+  .watch {
+    padding-left: 24px;
+    a {
+      color: $brown;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      padding-left: 8px;
+    }
+
+    .watchIcon {
+      @extend .icon;
+      color: $brown;
+    }
+  }
+
+  .paddingLeft {
+    padding-left: 80px;
+  }
+
+  .btnSign {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+
+  .yellowBox {
+    display: flex;
+    width: 367px;
+    height: 372px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: $yellow;
+  }
+
+  .rentagle {
+    height: 806px;
+    position: absolute;
+    right: 0px;
+    top: 202px;
+    z-index: -1;
+    fill: var(--amber-100, #fef3c7);
+  }
+}
+
+@media (min-width: 0px) and (max-width: $sm) {
+  .bgCollectible {
+    background: white;
+    padding: 0px;
+
+    h1 {
+      font-size: 64px;
+      padding: 25px;
+    }
+    p { 
+      padding: 25px;
+    }
+    .yellowBox {
+      width: 300px !important;
+      height: 305px !important;
+      img {
+        width: 446px;
+        height: 348px;
+      }
+    }
+    .rentagle {
+      top: 500px;
+    }
+    .paddingLeft {
+      padding-left: 0px !important;
+    }
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .bgCollectible {
+    background: white;
+    .paddingLeft {
+      padding-left: 0px !important;
+    }
+    .rentagle {
+      top: 500px;
+    }
+  }
+}

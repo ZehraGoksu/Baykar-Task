@@ -1,0 +1,132 @@
+@import "Main.scss";
+
+.bgComments {
+  margin-bottom: 80px;
+
+  .mainTitle {
+    padding: 80px 80px 20px 80px;
+    h2 {
+      color: $blueGray;
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 110%;
+    }
+
+    .circleIcon {
+      width: 48px;
+      height: 48px;
+      color: $brown;
+    }
+  }
+
+  .yellowBox {
+    margin: -40px 0;
+    position: absolute;
+    width: 90%;
+    height: 421px;
+    background-color: $lightYellow;
+  }
+
+  .card {
+    border-radius: 20px;
+    height: 430px;
+    border: 1px solid var(--blue-gray-200, #e2e8f0);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07),
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+  .card-body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    p {
+      overflow: hidden;
+    }
+  }
+  .personTitle {
+    h6 {
+      margin-bottom: 1px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 160%;
+    }
+    p {
+      margin-bottom: 0px;
+      color: var(--blue-gray-600, #475569);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  .slider-container {
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider {
+    display: flex;
+    width: 2000px;
+    transition: transform 0.3s ease;
+  }
+
+  .slide {
+    flex: 1;
+    height: 430px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: $l) {
+  .bgComments {
+  .mainTitle {
+    .removeIcons {
+      display: none;
+      position: absolute;
+    }}
+  }
+}
+
+@media (max-width: $md) {
+  .bgComments {
+    .mainTitle {
+      h2 {
+        font-size: 36px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile) and (max-width: $sm) {
+  .bgComments {
+    .mainTitle {
+      padding: 80px 20px 20px 20px;
+      h2 {
+        font-size: 37px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: $mobile) {
+  .bgComments {
+    .mainTitle {
+      padding: 80px 20px 20px 20px;
+      h2 {
+        font-size: 32px;
+        text-align: center;
+      }
+    }
+  }
+}

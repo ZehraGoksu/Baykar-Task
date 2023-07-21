@@ -1,0 +1,35 @@
+@import "Main.scss";
+
+.bgSub {
+  padding-top: 160px; 
+  .img-size {
+    margin-left: 1rem;
+    width: 64px;
+    height: 64px;
+  }
+  .title {
+    color: $blueGray;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+  }
+  .text {
+    color: $blueGray;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
+
+@media (max-width: $md) {
+  .bgSub {
+    background: $bgYellow;
+    flex-direction: column;
+    text-align: center;
+  }
+  .img-size {
+    margin-left: 0;
+  }
+}
+
+  

@@ -1,0 +1,162 @@
+@import "Main.scss";
+
+.bgWhy {
+  padding: 160px 80px; 
+
+  .box {
+    display: flex;
+    height: 496px;
+    padding: 80px;
+    align-items: center;
+    gap: 80px;
+    align-self: stretch;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07),
+      0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    p {
+      margin: 4px 4px 4px 10px;
+      color: $blueGray;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 180%;
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 110%;
+    }
+
+    .materials {
+      margin: 24px 0px;
+    }
+
+    .btnSign {
+      padding: 16px 32px;
+    }
+    .icon {
+      color: $green;
+    }
+
+    .screen {
+      height: 350px;
+      border-radius: 20px;
+      border: 5px solid white;
+      background: white;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07),
+        0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .video {
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .buttons {
+      margin: 7px 16px 0 16px;
+
+      svg {
+        margin: 0 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .bgWhy {
+    padding: 160px 40px;
+
+    .box {
+      padding: 30px;
+      gap: 20px;
+
+      p {
+        margin: 4px 4px 4px 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (min-width: $sm) and (max-width: $lg) {
+  .bgWhy {
+    padding: 160px 90px;
+
+    .box {
+      padding: 50px 30px;
+      gap: 20px;
+      height: 750px;
+
+      p {
+        margin: 4px 4px 4px 10px;
+        font-size: 16px;
+      }
+    }
+  }
+} 
+
+
+@media (min-width: $sm) and (max-width: $md) {
+    .bgWhy {
+      padding: 160px 16px;
+  
+      .box {
+        padding: 50px 30px;
+        gap: 20px;
+        height: 750px;  
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10);
+  
+        p {
+          margin: 4px 4px 4px 10px;
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 32px;
+          font-weight: 700; 
+        }
+        .video {
+          width: 450px; 
+        }
+        .screen{
+            height: 315px;
+        }
+        .buttons {
+          margin: 0 16px 0 16px;
+        }  
+      }
+    }
+  }
+
+  
+  
+@media (min-width: 0px) and (max-width: $sm) {
+    .bgWhy {
+      padding: 160px 16px;
+  
+      .box {
+        padding: 50px 30px;
+        gap: 20px;
+        height: 750px;  
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10);
+  
+        p {
+          margin: 4px 4px 4px 10px;
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 32px;
+          font-weight: 700; 
+        }
+        .video {
+          width: 260px; 
+        }
+        .buttons {
+          margin: 0 6px 0 6px;
+        }  
+        .screen{
+            height: 190px;
+        }
+      }
+    }
+  }
+  

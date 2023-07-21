@@ -1,0 +1,38 @@
+@import "Main.scss";
+
+.bgNav {  
+  color: $brown;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $brown;
+    text-decoration: none;
+  }
+  .barIcon {
+    @extend .icon;
+    transform: scaleX(-1) rotate(90deg); 
+  }
+  
+}
+
+
+@media (min-width: 0px) and (max-width: $sm) {
+  .bgNav {  
+    background-color: white;
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .bgNav {  
+    background-color: white;
+  }
+}
+

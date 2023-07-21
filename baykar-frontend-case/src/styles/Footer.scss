@@ -1,0 +1,104 @@
+@import "Main";
+
+.bg-footer {
+  background-color: $blueGray; 
+  padding: 80px;
+  font-size: 16px;
+  font-weight: 400;
+
+  h5 {
+    color: white;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    margin: 10px 0px;
+    color: $bgFooterText;
+    line-height: 22.4px;
+  }
+  h6 {
+    @extend .nav-link;
+    font-size: 16px;
+    font-weight: 400;
+  } 
+  .riIcon {
+    @extend .icon;
+    color: white;
+  }
+  img {
+    margin-top: 25px;
+    object-fit: none;
+  }
+  #AppStore {
+    width: 120px;
+    cursor: pointer;
+  }
+  #PlayStore {
+    width: 135px;
+    cursor: pointer;
+  }
+  .followUs {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hrLong {
+  width: 100%;
+  background-color: #ffffffe6;
+}
+
+@media (max-width: $mobile) {
+  .bg-footer{
+    padding: 16px;
+  }
+  .link {
+    flex-direction: column;
+    text-align: center;
+  }
+  .subTitle{ 
+    flex-direction: column;
+    text-align: center;
+
+    ul{
+      padding-left: 0px;
+      padding-top: 25px;
+    }
+  }
+  .store{
+    padding: 0px 110px;
+  }
+  #AppStore {
+    width: 135px!important;
+  }
+  
+}
+
+@media (min-width: $mobile) and (max-width: $sm) {
+  .link div {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .bg-footer {
+    padding: 40px;
+  } 
+}
+
+@media (min-width: $mobile) and (max-width: $md) {
+  .subTitle{ 
+    flex-direction: column;
+    text-align: center;
+
+    ul{
+      padding-left: 0px;
+    }
+  }
+}

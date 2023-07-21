@@ -1,0 +1,323 @@
+@import "Main.scss";
+
+.bestBox {
+  background-color: $blueGray;
+  padding: 80px;
+
+  h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 110%;
+  }
+  .btnSign {
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 20px 48px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .boxDiv {
+    padding-top: 80px;
+    position: relative;
+  }
+
+  .card {
+    padding: 0;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid $blueGray;
+    background: $blueGray;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07),
+      0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+  }
+
+  .card-body {
+    padding: 32px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    padding-bottom: 16px;
+  }
+
+  .card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .btnBuy {
+    color: white;
+    border: 2px solid white;
+    padding: 20px 0px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 8px;
+    margin: 32px 0px;
+  }
+
+  .pinkcircle {
+    border-radius: 50px;
+    opacity: 0.75;
+    background: var(--pink-700, #be185d);
+    width: 271px;
+    height: 271px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -40px;
+    top: 275px;
+  }
+
+  .blueCircle {
+    width: 161px;
+    height: 161px;
+    border-radius: 50px;
+    opacity: 0.75;
+    background: var(--blue-light-700, #0369a1);
+    position: absolute;
+    left: 443px;
+    top: 50px;
+  }
+
+  .orangeCircle {
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    opacity: 0.75;
+    background: var(--amber-700, #b45309);
+    position: absolute;
+    left: 775px;
+    top: 440px;
+  }
+
+  .purpleCircle {
+    width: 202px;
+    height: 202px;
+    border-radius: 30px;
+    opacity: 0.75;
+    background: var(--fuchsia-700, #a21caf);
+    position: absolute;
+    left: 1060px;
+    top: 485px;
+  }
+
+  .greenCircle {
+    width: 232px;
+    height: 232px;
+    border-radius: 50px;
+    opacity: 0.75;
+    background: var(--green-700, #15803d);
+    position: absolute;
+    left: 1160px;
+    top: 140px;
+  }
+}
+
+@media (max-width: $md) {
+  .titleBest {
+    flex-direction: column;
+    h1 {
+      margin-bottom: 32px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+  .boxDiv {
+    flex-direction: column;
+    min-height: 460px;
+  }
+  .bestBox {
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: $xxl) and (max-width: $xxxl) {
+  .bestBox {  
+    .blueCircle {
+      left: 400px; 
+    }
+
+    .orangeCircle {
+      left: 700px; 
+    }
+
+    .purpleCircle {
+      left: 960px; 
+    }
+
+    .greenCircle {
+      left: 1090px; 
+    }
+  }
+}
+@media (min-width: $xl) and (max-width: $xxl) {
+  .bestBox { 
+    .blueCircle {
+      left: 365px;
+      top: 50px;
+    }
+
+    .orangeCircle {
+      left: 660px;
+      top: 440px;
+    }
+
+    .purpleCircle {
+      left: 890px;
+      top: 455px;
+    }
+
+    .greenCircle {
+      left: 880px; 
+    }
+  }
+}
+@media (min-width: $lg) and (max-width: $xl) {
+  .bestBox {  
+    .blueCircle {
+      left: 330px; 
+    }
+
+    .orangeCircle {
+      left: 470px; 
+    }
+
+    .purpleCircle {
+      left: 660px; 
+    }
+
+    .greenCircle {
+      left: 675px; 
+    }
+  }
+}
+
+@media (min-width: $l) and (max-width: $lg) {
+  .bestBox {  
+    .blueCircle {
+      left: 230px;
+      top: 50px;
+    }
+
+    .orangeCircle {
+      left: 300px;
+      top: 440px;
+    }
+
+    .purpleCircle {
+      left: 470px; 
+      top:420px;
+    }
+
+    .greenCircle {
+      left: 480px; 
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $l) {
+  .bestBox {  
+    .blueCircle {
+      left: 230px;
+      top: 50px;
+    }
+
+    .orangeCircle {
+      left: 300px;
+      top: 440px;
+    }
+
+    .purpleCircle {
+      left: 470px; 
+      top:420px;
+    }
+
+    .greenCircle {
+      left: 455px; 
+    }
+  }
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+  .bestBox {  
+    .pinkcircle{
+      top:475px;
+    }
+    .blueCircle {
+      left: 395px;
+      top:980px;
+    }
+
+    .orangeCircle {
+      left: 30px;
+      top: 440px;
+    }
+
+    .purpleCircle {
+      left: -12px;
+      top: 1490px;
+    }
+
+    .greenCircle {
+      left: 45px; 
+    }
+  }
+} 
+
+@media (min-width: $mobile) and (max-width: $sm) {
+  .bestBox {   
+      .pinkcircle{
+        top:400px;
+      }
+      .blueCircle {
+        left: 250px;
+        top:980px;
+      }
+  
+      .orangeCircle {
+        left: 30px;
+        top: 440px;
+      }
+  
+      .purpleCircle {
+        left: -12px;
+        top: 1400px;
+      }
+  
+      .greenCircle {
+        left: 45px; 
+      }
+    }
+}
+
+@media (min-width: 0px) and (max-width: $mobile) {
+  .bestBox {  
+    .pinkcircle{
+      top:475px;
+    }
+    .blueCircle {
+      left: 200px;
+      top:980px;
+    }
+
+    .orangeCircle {
+      left: 30px;
+      top: 440px;
+    }
+
+    .purpleCircle {
+      left: -12px;
+      top: 1490px;
+    }
+
+    .greenCircle {
+      left: 45px; 
+    }
+  }}

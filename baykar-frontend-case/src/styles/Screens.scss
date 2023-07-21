@@ -1,0 +1,177 @@
+@import "Main.scss";
+
+.screen {
+  height: 451px;
+  border-radius: 20px;
+  border: 5px solid white;
+  background: white;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07),
+    0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  img {
+    border-radius: 20px;
+  }
+}
+
+.mainScreen {
+  margin-top: -348px;
+  margin-left: 99px;
+}
+
+.buttons {
+  margin: 7px 16px 0 16px;
+
+  svg {
+    margin: 0 3px;
+  }
+}
+
+.miniScreen {
+  position: absolute;
+  top: 490px;
+  left: 1030px;
+}
+
+@media (min-width: $xl) and (max-width: $xxl) {
+  .gallery{
+    margin-left: 80px;
+  }
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 510px;
+    left: 890px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .gallery{
+    margin-left: 80px;
+  }
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 510px;
+    left: 830px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
+
+
+@media (min-width: $l) and (max-width: $lg) {
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 490px;
+    left: 510px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
+
+
+
+@media (min-width: $md) and (max-width: $l) {
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 490px;
+    left: 510px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
+
+
+
+@media (min-width: $sm) and (max-width: $md) {
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 490px;
+    left: 510px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
+
+
+
+@media (min-width: 0px) and (max-width: $sm) {
+  .video {
+    width: 450px;
+  }
+
+  .mainScreen {
+    margin-top: -210px;
+    margin-left: 80px;
+  }
+  .screen {
+    height: 315px;
+  }
+  .miniScreen {
+    top: 490px;
+    left: 510px;
+  }
+  .miniImg{
+    
+    width: 150px;
+  }
+}
